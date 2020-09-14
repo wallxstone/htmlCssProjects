@@ -1,0 +1,88 @@
+<html>
+    <head></head>
+    <style>
+        *{
+            font: sans-serif;
+        }
+        h1{
+            font-size:10vh;
+            color:darkturquoise;
+            letter-spacing: 2px;
+            padding:0;
+            margin:0;
+        }
+        #description{
+         font-size: 5vh;
+         font-weight: 600;
+         line-height: 50px;   
+        }
+        #name, #name-label,#email, #email-label, #number, #number-label, #dropdown, #dropdown-label
+        , #radio-1, #radio-2, #checkbox-1, #checkbox-2, #comments, label
+        {
+            font-size:20px;
+            margin:4px ;
+            padding:4px 10px;
+        }
+        #number, #number-label{
+            width: 12vw;
+        }
+        input, select{
+            border-radius: 15px;
+            border:solid 2px;
+        }
+        #radio-1 label,#radio-2 label,#checkbox-1 label,#checkbox-2 label{
+            margin-left:0;
+            padding-left:0;
+        }
+        #comments{
+            width:50vw;
+            height:25vh;
+            border-radius: 10px;
+            resize:inherit;
+            margin:10px;
+            padding :5px;
+        }
+        #comment-label{
+            margin:10px;
+
+        }
+    </style>
+    <title id="title">Survey Form</title>
+    <div>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">For feedback after working with Hasnain!</p>
+    </div>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name: </label>
+        <input type="text"  placeholder="Enter Your name here" id="name">
+        <br>
+        <label for="email" id="email-label">Email: </label>
+        <input type="email" placeholder="Enter Your email here" id="email" style="margin-left:10px;">
+        <br>
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" min="18" max="48" id = "number" placeholder="Your Age" style="margin-left:24px;">
+        <br>
+        <label for="dropdown" id="dropdown-label">Select Gender</label>
+        <select name="Select Gender" id="dropdown" >
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        
+        </select>
+        <br>
+        <input type="radio" name="Work"  id="radio-1"><label for="radio-1">Graphic Design</label>
+        <br>
+        <input type="radio" name="Work" id="radio-2"><label for="radio-2">MySql Querying</label>
+        <br>
+        
+        <input type="checkbox" name="DeliveredOntime" id="checkbox-1" value="Was delivered on time?"><label for="checkbox-1">Was Work Delivered on time?</label>
+        <br>
+        <input type="checkbox" name="Areyousatisfied" id="checkbox-2"><label for="checkbox-2" value="are you satisfied?">Are you Satisfied?</label>
+        <br>
+        <label for="comments" id="comment-label">Leave comments for anything that is needed to be improved :</label>
+        <br><textarea id="comments"></textarea>
+        <br>
+        <input type="submit" placeholder="Submit" id="submit" style="border:solid white; border-radius:10px; justify-content: center;width:10vw;padding:10px; margin-left:20px;">
+    </form>
+    
+</html>
